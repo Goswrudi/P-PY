@@ -18,10 +18,6 @@ def volt():
     print(f'Your current is {current}:amps , and resistance is {resistance}:omw')
     voltage = current * resistance
     print(f'Your Voltage is {voltage}volt')
-    
-volt()
-
-
 
 def Current():
     voltage = float(input('enter the exact voltage '))
@@ -30,9 +26,6 @@ def Current():
     current = voltage / resistance
     print(f'your Current is {current}amps') 
 
-Current()
-
-
 def resistance():
     voltage = float(input('enter the exact voltage '))
     current = float(input('enter the current '))
@@ -40,4 +33,17 @@ def resistance():
     resistance = voltage / current
     print(f'your Current is {resistance}amps') 
 
-resistance()
+
+ask_user_choice = input('to measure voltage press V , for current I , for resistance R : ')
+
+if(ask_user_choice == 'V'):
+    volt()
+
+elif(ask_user_choice == 'I'):
+    Current()
+
+elif(ask_user_choice == 'R'):
+    resistance()
+
+else:
+    print(f'wrong choice enterd by the {name} :')
