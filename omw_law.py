@@ -25,9 +25,19 @@ volt()
 
 def Current():
     voltage = float(input('enter the exact voltage '))
-    resistance = float(input('enter the exact current '))
+    resistance = float(input('enter the exact resistance '))
     print(f'your Current voltage is {voltage}volt , and current is {resistance}omw ') 
     current = voltage / resistance
     print(f'your Current is {current}amps') 
 
 Current()
+
+
+def resistance():
+    voltage = float(input('enter the exact voltage '))
+    current = float(input('enter the current '))
+    print(f'your Current voltage is {voltage}volt , and current is {current}omw ') 
+    resistance = voltage / current
+    print(f'your Current is {resistance}amps') 
+
+resistance()
